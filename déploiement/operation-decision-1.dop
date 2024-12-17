@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="operation_decision_1" usingRuleflow="true" ruleflowName="RuleFlow1" targetRuleProjectName="Exercice">
+  <name>operation-decision-1</name>
+  <uuid>a9c4d059-8bd0-4d85-b06c-5bae9a92cef6</uuid>
+  <ruleflow href="../règles/RuleFlow1.rfl#c9bbccb0-ff70-438d-9f07-07cb16182d25"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="operation-decision-1_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Exercice#f6ff0ae2-5a13-4e08-866b-36e23e2efd22"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

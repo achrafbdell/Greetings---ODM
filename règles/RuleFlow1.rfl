@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>RuleFlow1</name>
+  <uuid>c9bbccb0-ff70-438d-9f07-07cb16182d25</uuid>
+  <locale>fr_FR</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Rule1" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="a7d502b4-8301-4861-bd28-eb9bc0525c0f"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_2"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node2" Task="task_0"/>
+      <TaskNode Identifier="node3" Task="task_2"/>
+      <TaskNode Identifier="node_0" Task="Rule1"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="link2" Source="node2" Target="node_0"/>
+      <Transition Identifier="link4" Source="node_0" Target="node3"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="fr_FR">
+      <Data Name="node3#y">165.0</Data>
+      <Data Name="node2#y">15.0</Data>
+      <Data Name="node3#x">38.618</Data>
+      <Data Name="node2#x">38.618</Data>
+      <Data Name="node_0#label">Rule1</Data>
+      <Data Name="node_0#x">38.618</Data>
+      <Data Name="node_0#y">90.0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>
